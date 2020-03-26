@@ -11,12 +11,17 @@
 </head>
 <body>
 
-  <header class="masthead" aria-label="banner">
+  <ul class="skip-links">
+    <li><a href="#main">Jump to main content</a></li>
+    <li><a href="#nav">Jump to navigation</a></li>
+  </ul>
+
+  <header class="masthead" role="banner">
     <div class="wrapper pad-t-1-2 pad-b-1-2 gutter-1-2">
       <h1 class="push-0">Shrubbery, etc.</h1>
     </div>
     <div class="nav">
-      <nav class="wrapper gutter-1-2">
+      <nav class="wrapper gutter-1-2" role="navigation" id="nav" tabindex="0">
         <ol class="mega list-group-inline push-0">
           <li><a class="ib gutter-1-2 pad-t-1-2 pad-b-1-2" href="#">About</a></li>
           <li><a class="ib gutter-1-2 pad-t-1-2 pad-b-1-2" href="#">Shrubs</a></li>
@@ -28,9 +33,9 @@
     </div>
   </header>
 
-  <main aria-label="main">
+  <main role="main" id="main" tabindex="0">
 
-    <div class="about push" id="about">
+    <section class="about push" id="about" tabindex="0">
       <div class="embed embed-24by10">
         <img class="embed-item" src="images/shrubs.jpg" alt="">
       </div>
@@ -41,9 +46,9 @@
           <p class="bold mega push-0 max-length not-centered">Yes, shrubberies are my trade—I am a shrubber. My name is Roger the Shrubber. I arrange, design, and sell shrubberies.</p>
         </div>
       </div>
-    </div>
+    </section>
 
-    <div>
+    <section id="products" tabindex="0">
       <div class="wrapper gutter-1-2">
         <h2 class="push-0 color-brand-dark">Products</h2>
         <p class="mega max-length not-centered push">If you do not tell us where we can buy a shrubbery, my friend and I will say… we will say… “nee”.</p>
@@ -71,14 +76,15 @@
           </li>
         </ul>
       </div>
-    </div>
+    </section>
 
-    <div class="prices pad-t pad-b">
+    <section class="prices pad-t pad-b" id="prices" tabindex="0">
       <div class="wrapper gutter-1-2">
         <h2 class="push-0 color-brand-dark">Prices</h2>
         <p class="mega max-length not-centered push">Even those who arrange and design shrubberies are under considerable economic stress at this period in history.</p>
 
         <table>
+          <caption class="italic milli">Prices for small, medium and large shrubberies.</caption>
           <tr>
             <td>&nbsp;</td>
             <th class="bold">Small</th>
@@ -105,9 +111,9 @@
           </tr>
         </table>
       </div>
-    </div>
+    </section>
 
-    <div class="news pad-t pad-b">
+    <section class="news pad-t pad-b" id="news" tabindex="0">
       <div class="wrapper gutter-1-2">
         <h2 class="push-0 color-brand-dark">News</h2>
         <p class="mega max-length not-centered">Then, when you have found the shrubbery, you must cut down the mightiest tree in the forest… with… a herring!</p>
@@ -126,9 +132,9 @@
           </li>
         </ol>
       </div>
-    </div>
+    </section>
 
-    <div class="contact pad-t pad-b">
+    <section class="contact pad-t pad-b" id="contact" tabindex="0">
       <div class="wrapper">
         <h2 class="push-0 color-brand-dark gutter-1-2">Contact</h2>
         <p class="mega max-length not-centered gutter-1-2">We want… a shrubbery!</p>
@@ -155,13 +161,13 @@
           </div>
         </form>
       </div>
-    </div>
+    </section>
 
   </main>
 
-  <footer class="footer pad-t-1-2 pad-b-1-2" aria-label="contentinfo">
+  <footer class="footer pad-t-1-2 pad-b-1-2" role="contentinfo">
     <div class="wrapper gutter-1-2">
-      <small class="push-0 micro">Some quotes © <i>Monty Python and the Holy Grail</i>, 1975.</small>
+      <small class="bold push-0 micro">Some quotes © <i>Monty Python and the Holy Grail</i>, 1975.</small>
     </div>
   </footer>
 
