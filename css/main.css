@@ -12,7 +12,6 @@ html {
 
 a {
   color: #568c36;
-  text-decoration: none;
 }
 
 a:hover {
@@ -20,7 +19,11 @@ a:hover {
 }
 
 a:focus {
-  border: 1px solid #000;
+  outline: 1px solid #000;
+}
+
+.read-more {
+  color: #113c00;
 }
 
 .masthead {
